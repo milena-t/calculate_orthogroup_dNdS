@@ -2,6 +2,12 @@
 
 This script contains a workflow that calculates the pairwise dNdS ratio of a single 1-to-1 orthogroup created with Orthofinder wit PAML.
 
+### Quick-start
+Also use `-h`for more info
+```
+python3 calculate_orthogroup_dNdS.py --orthogroup /path/to/orthofinder/Orthogroup_Sequences/OG0006980.fa --cds /path/to/dir/cds_complete --pal2nalbin /path/to/pal2nal.pl --verbose --overwrite
+```
+
 ## Dependencies
 
 * [Orthofinder](https://github.com/davidemms/OrthoFinder) (The script assumes the file structure of orthofinder output to create the default output directory and to retrieve the gene tree)
