@@ -5,7 +5,11 @@ This script contains a workflow that calculates the pairwise dNdS ratios of a si
 ### Quick start
 Use `-h` for more info.
 ```
-python3 calculate_orthogroup_dNdS.py --orthogroup /path/to/orthofinder/results/Orthogroup_Sequences/OG0006980.fa --cds /path/to/dir/cds_complete --pal2nalbin /path/to/pal2nal.pl --verbose --overwrite
+python3 calculate_orthogroup_dNdS.py \
+--orthogroup /path/to/orthofinder/results/Orthogroup_Sequences/OG0006980.fa \
+--cds /path/to/dir/cds_complete \
+--pal2nalbin /path/to/pal2nal.pl \
+--verbose --overwrite
 ```
 
 ## Dependencies
