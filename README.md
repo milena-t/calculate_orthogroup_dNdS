@@ -2,10 +2,10 @@
 
 This script contains a workflow that calculates the pairwise dNdS ratios of a single 1-to-1 orthogroup created with Orthofinder wit PAML.
 
-### Quick-start
-Also use `-h` for more info
+### Quick start
+Use `-h` for more info.
 ```
-python3 calculate_orthogroup_dNdS.py --orthogroup /path/to/orthofinder/Orthogroup_Sequences/OG0006980.fa --cds /path/to/dir/cds_complete --pal2nalbin /path/to/pal2nal.pl --verbose --overwrite
+python3 calculate_orthogroup_dNdS.py --orthogroup /path/to/orthofinder/results/Orthogroup_Sequences/OG0006980.fa --cds /path/to/dir/cds_complete --pal2nalbin /path/to/pal2nal.pl --verbose --overwrite
 ```
 
 ## Dependencies
@@ -16,7 +16,7 @@ python3 calculate_orthogroup_dNdS.py --orthogroup /path/to/orthofinder/Orthogrou
 * [Clustal Omega](http://www.clustal.org/omega/) (for the alignment)
 * [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html) (the script has yn00 and codeml implemented)
 * [pal2nal](https://www.bork.embl.de/pal2nal/) (to make the protein alignment codon-based)
-  (Here I allow to give a custom path to the executeable since it wasn't installed in the HPC already)
+  (Here I allow to give a custom path to the executeable since it wasn't installed in the HPC already. Remember to make the `pal2nal.pl` file executeable!)
 
 ## Input data
 
