@@ -25,7 +25,7 @@ def split_file(input_file_path, lines_per_file=100):
     if output_file:
         output_file.close()
 
-input_file_path = '/proj/naiss2023-6-65/Milena/gene_family_analysis/dNdS_stuff_for_Lila/Orthogroups_SingleCopyOrthologues.txt'
+input_file_path = '/path/to/Orthogroups/Orthogroups_SingleCopyOrthologues.txt'
 
 # only run once 
 #split_file(input_file_path, lines_per_file=100)
@@ -48,7 +48,7 @@ if len(sys.argv)>1:
         print(OG_id)
 
         ## change this orthofinder results path!
-        command = f"python3 calculate_orthogroup_dNdS.py --orthogroup /proj/naiss2023-6-65/Lila/beetle_genomes/Orthofinder_beetles/OrthoFinder/Results_May30/Orthogroup_Sequences/{OG_id}.fa --cds /proj/naiss2023-6-65/Milena/gene_family_analysis/cds_native_annotations --pal2nalbin /proj/naiss2023-6-65/Lila/beetle_genomes/pal2nal.v14/pal2nal.pl --verbose"
+        command = f"python3 calculate_orthogroup_dNdS.py --orthogroup /path/to/Orthogroup_Sequences/{OG_id}.fa --cds /path/to/cd_sall_species --pal2nalbin /path/to/pal2nal.pl --verbose"
         print(command)
 
         # run the command 
