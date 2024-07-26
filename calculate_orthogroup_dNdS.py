@@ -63,7 +63,7 @@ The individual steps consist of:
     # Add the arguments
     parser.add_argument('-f', '--orthogroup', type=str, required=True, help='Absolute filepath to the protein multifasta file of the orthogroup of interest')
     parser.add_argument('--cds', required=True, help="coding sequence (aminoacid) multifasta corresponding to the orthogroup proteinfasta or a directory containing the complete cds fasta for all species so that the program can extract the nucleotide sequences automatically")
-    parser.add_argument('-o', '--outdir', type=int, help='Directory where the output_file is stored, default: filename from orthogroup input')
+    parser.add_argument('-o', '--outdir', type=str, help='Directory where the output_file is stored, default: filename from orthogroup input')
     parser.add_argument('--pal2nalbin', type=str, help="Absolute path to an executeable to run pal2nal, default: ./pal2nal.pl")
     parser.add_argument('--pal2naloptions', type=str, help="command line options for pal2nal, default: -output paml -nogap -nomismatch")
     parser.add_argument('--clustalbin', type=str, help="path to the clustal-omega executeable if it is not default clustalo. not necessary if the uppmax module is loaded with: module load clustalo/1.2.4")
