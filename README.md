@@ -39,6 +39,7 @@ module load bioinfo-tools clustalo/1.2.4 biopython/1.80-py3.10.8 paml/4.10.7
 * `--verbose`: verbose output, not recommended when you run a bunch of orthogroups.
 * `--overwrite`: the script checks for presence of the cds fasta (if `--cds` is a file) and the alignment file, and by default will then use preexisting ones. If you specify overwrite, the script will overwrite preexisting files.
 * `--codeml`: The script runs yn00 by default because it's faster and only tries codeml if the output files of yn00 are empty. This option skips yn00 and forces codeml.
+
 also use `--help` for more information.
 
 # Workflow inside the script
