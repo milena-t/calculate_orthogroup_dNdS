@@ -1,6 +1,6 @@
 # Introduction
 
-This script contains a workflow that calculates the pairwise dNdS ratios of a single 1-to-1 orthogroup created with Orthofinder wit PAML.
+This script contains a workflow that calculates the pairwise dNdS ratios of a single 1-to-1 orthogroup created by Orthofinder with PAML.
 
 ### Quick start
 Use `-h` for more info.
